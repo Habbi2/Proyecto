@@ -1,11 +1,7 @@
-const Greeting = ({greeting}) => {
-    return (
-        <h1 className='greeting'>{greeting}</h1>
-    );
-};
+import ItemCount from "./ItemCount";
 
 export default function ItemListContainer() {
     return (
-        <Greeting greeting='hola'/>
+        <ItemCount/>
     );
 };
