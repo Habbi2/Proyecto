@@ -2,6 +2,6 @@ import ItemCount from "./ItemCount";
 
 export default function ItemListContainer() {
     return (
-        <ItemCount/>
+        <ItemCount initial={1} maxStock={5}/>
     );
 };

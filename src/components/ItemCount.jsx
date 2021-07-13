@@ -1,20 +1,17 @@
 import { useState } from 'react'
 
-function ItemCount({ initial, maxStock, onAdd, onDecrease, onConfirm }) {
-    const [stock, setCount] = useState(0);
+const ItemCount = ({ initial, maxStock }) => {
+    const [stock, setCount] = useState(initial);
 
-    initial = 0;
-    maxStock = 5;
-
-    onAdd = () => {
+    const onAdd = () => {
         if (stock < maxStock) setCount(p => p+1)
     };
 
-    onDecrease = () => {
+    const onDecrease = () => {
         if (stock > initial) setCount(p => p-1)
     };
 
-    onConfirm = () => {
+    const onConfirm = () => {
         alert("You just bought " + stock + " items")
     }
 
