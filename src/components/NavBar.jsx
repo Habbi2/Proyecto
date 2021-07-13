@@ -7,7 +7,7 @@ const NavBar = () => {
     return (
     <Navbar bg="dark" variant='dark' expand="lg">
         <div className='mx-auto' style={{display:'flex'}}>
-            <NavbarBrand href="/">Habbi Games</NavbarBrand>
+            <NavbarBrand href="/">Habbi</NavbarBrand>
             <NavDropdown>
                 <NavLink href="/tetris">Tetris</NavLink>
                 <NavLink href="/roguelike">Roguelike</NavLink>
