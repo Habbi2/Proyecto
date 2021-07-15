@@ -2,9 +2,11 @@ import Item from "./Item";
 
 const ItemList = ({list}) => {
     return (
-        <ul className="list-container">
-            {list.map(i => <Item key={i.id} item={i}/>)}
-        </ul>
+        <div className="container-fluid">
+            <ul class="row">
+                {list.map(i => <Item key={i.id} item={i}/>)}
+            </ul>
+        </div>
     );
 };
 

@@ -1,5 +1,9 @@
 import ItemList from "./ItemList";
 import {useState, useEffect} from 'react';
+import tetris from '../img/tetris.png'
+import roguelike from '../img/roguelike.png'
+import infiniteRunner from '../img/infinite-runner.png'
+
 
 export default function ItemListContainer() {
     const [itemList, setItemList] = useState([]);
@@ -9,17 +13,17 @@ export default function ItemListContainer() {
                 id: "1",
                 title: "Tetris",
                 price: "150$",
-                pictureUrl: "Tetris.png"
+                pictureUrl: tetris
             }, {
                 id: "2",
                 title: "Roguelike",
                 price: "200$",
-                pictureUrl: "Roguelike.png"
+                pictureUrl: roguelike
             }, {
                 id: "3",
                 title: "Infinite-Runner",
                 price: "100$",
-                pictureUrl: "Infinite-Runner.png"
+                pictureUrl: infiniteRunner
             }
         ];
 
