@@ -1,6 +1,6 @@
 import { Navbar, NavbarBrand, NavDropdown, NavLink} from 'react-bootstrap';
 import CartWidget from './CartWidget';
-import '../components/custom.scss';
+import '../components/scss/custom.scss';
 
 
 const NavBar = () => {
@@ -8,6 +8,7 @@ const NavBar = () => {
     <Navbar bg="dark" variant='dark' expand="lg">
         <div className='mx-auto' style={{display:'flex'}}>
             <NavbarBrand href="/">Habbi</NavbarBrand>
+            {/*Change scss from block dropdown to a full width dropdown*/}
             <NavDropdown>
                 <NavLink href="/tetris">Tetris</NavLink>
                 <NavLink href="/roguelike">Roguelike</NavLink>

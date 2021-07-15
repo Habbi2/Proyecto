@@ -1,0 +1,100 @@
+@import 'bootstrap/scss/bootstrap.scss';
+
+$color1: #142D40;
+$color2: #295A80;
+$color3: #3D87BF;
+$color4: #49A2E6;
+$color5: #52B4FF;
+
+body{
+    background-color: $color2;
+}
+
+.itemcount {
+    width: 100%;
+    height: 100%;
+    padding: 18% 0% 18% 0%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    padding:10px;
+    border:3px solid;
+    margin:10px;
+    min-width: 130px;
+    width: 13%;
+    display: inline-flex;
+    justify-content: space-between;
+    border-radius: 2rem;
+    border-color: $color4;
+    background-color: $color1;
+    padding: 8px;
+    text-align: center;
+}
+
+.sbutton{
+    background-color: transparent;
+    border-radius: 0%;
+    border-color: transparent;
+    color: $color4;
+    font-size: 20px;
+}
+
+.sbutton-add{
+    background-color: transparent;
+    border-radius: 0%;
+    border-color: transparent;
+    color: $color4;
+    font-size: 22px;
+}
+
+.add{
+    padding:10px;
+    border: 3px solid;
+    min-width: 130px;
+    width: 13%;
+    border-radius: 2rem;
+    border-color: $color4;
+    background-color: $color1;
+    padding: 8px;  
+    text-align: center;
+}
+
+.dropdown-menu{
+    background-color: $color1;
+    border: 1px solid $color5;
+}
+
+.navbar-dark .navbar-brand{
+    color: $color4;
+}
+
+.nav-link{
+   color: $color4;
+};
+
+.bg-dark {
+    background-color: $color1 !important;
+}
+
+.stock {
+    color: $color4;
+    font-size: 25px;
+    line-height: 1.3;
+    margin-bottom: 0;
+}
+
+.list-group-item {
+    background-color: $color1;
+    color: $color4;
+}
+
+.list-group {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 4%;
+    text-align: center;
+}

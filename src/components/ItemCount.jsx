@@ -12,6 +12,7 @@ const ItemCount = ({ initial, maxStock }) => {
     };
 
     const onConfirm = () => {
+        //Change alert for a scss label popup
         alert("You just bought " + stock + " items")
     }
 
@@ -19,11 +20,11 @@ const ItemCount = ({ initial, maxStock }) => {
         <div className='itemcount'>
             <label className="button">
                 <button className="sbutton" onClick={onDecrease}>-</button>
-                <h5>{stock}</h5>
+                <h5 className="stock">{stock}</h5>
                 <button className="sbutton" onClick={onAdd}>+</button>
             </label>
             <label className="add">
-                <button className="sbutton" onClick={onConfirm}>Add to Cart</button>
+                <button className="sbutton-add" onClick={onConfirm}>Add to Cart</button>
             </label>
         </div>
     );
