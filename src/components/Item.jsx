@@ -7,8 +7,8 @@ const Item = ({item}) => {
                 <img alt="" src={item.pictureUrl} className="image"></img>
             </div>
             <div className="word-container">
-                <p className="list-word">{item.title}</p>
-                <p className="list-word">{item.price}</p>
+                <h1 className="list-word">{item.title}</h1>
+                <h4 className="list-word">{item.price}</h4>
             </div>
             <ItemCount initial={1} maxStock={5}/>
         </li>
