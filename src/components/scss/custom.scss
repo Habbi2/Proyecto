@@ -6,14 +6,14 @@ $color3: #3D87BF;
 $color4: #49A2E6;
 $color5: #52B4FF;
 
-body{
+body {
     background-color: $color2;
 }
 
 .itemcount {
     width: 100%;
     height: 100%;
-    padding: 18% 0% 18% 0%;
+    padding: 18% 0;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -21,9 +21,9 @@ body{
 }
 
 .button {
-    padding:10px;
-    border:3px solid;
-    margin:10px;
+    padding: 10px;
+    border: 3px solid;
+    margin: 10px;
     min-width: 130px;
     width: 13%;
     display: inline-flex;
@@ -35,45 +35,45 @@ body{
     text-align: center;
 }
 
-.sbutton{
+.sbutton {
     background-color: transparent;
-    border-radius: 0%;
+    border-radius: 0;
     border-color: transparent;
     color: $color4;
     font-size: 20px;
 }
 
-.sbutton-add{
+.sbutton-add {
     background-color: transparent;
-    border-radius: 0%;
+    border-radius: 0;
     border-color: transparent;
     color: $color4;
     font-size: 22px;
 }
 
-.add{
-    padding:10px;
+.add {
+    padding: 10px;
     border: 3px solid;
     min-width: 130px;
     width: 13%;
     border-radius: 2rem;
     border-color: $color4;
     background-color: $color1;
-    padding: 8px;  
+    padding: 8px;
     text-align: center;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     background-color: $color1;
     border: 1px solid $color5;
 }
 
-.navbar-dark .navbar-brand{
+.navbar-dark .navbar-brand {
     color: $color4;
 }
 
-.nav-link{
-   color: $color4;
+.nav-link {
+    color: $color4;
 };
 
 .bg-dark {
@@ -87,10 +87,10 @@ body{
     margin-bottom: 0;
 }
 
-
 .list-group-item {
     background-color: $color1;
     color: $color4;
+    margin: 0;
 }
 
 .list-group {
@@ -100,6 +100,6 @@ body{
     text-align: center;
 }
 
-.list-container{
+.list-container {
     margin-top: 2%;
 }

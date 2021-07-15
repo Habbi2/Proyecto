@@ -1,14 +1,17 @@
-import { useState } from 'react'
+import {useState} from 'react'
 
-const ItemCount = ({ initial, maxStock }) => {
-    const [stock, setCount] = useState(initial);
+const ItemCount = ({initial, maxStock}) => {
+    const [stock,
+        setCount] = useState(initial);
 
     const onAdd = () => {
-        if (stock < maxStock) setCount(p => p+1)
+        if (stock < maxStock) 
+            setCount(p => p + 1)
     };
 
     const onDecrease = () => {
-        if (stock > initial) setCount(p => p-1)
+        if (stock > initial) 
+            setCount(p => p - 1)
     };
 
     const onConfirm = () => {
@@ -16,7 +19,7 @@ const ItemCount = ({ initial, maxStock }) => {
         alert("You just bought " + stock + " items")
     }
 
-    return(
+    return (
         <div className='itemcount'>
             <label className="button">
                 <button className="sbutton" onClick={onDecrease}>-</button>
