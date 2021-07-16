@@ -10,7 +10,7 @@ const Item = ({item}) => {
                 <h1 className="list-word">{item.title}</h1>
                 <h4 className="list-word">{item.price}</h4>
             </div>
-            <ItemCount initial={1} maxStock={5}/>
+            <ItemCount initial={1} maxStock={item.stock}/>
         </li>
     );
 }

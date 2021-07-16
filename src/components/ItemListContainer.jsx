@@ -13,17 +13,20 @@ export default function ItemListContainer() {
                 id: "1",
                 title: "Tetris",
                 price: "150$",
-                pictureUrl: tetris
+                pictureUrl: tetris,
+                stock: 3
             }, {
                 id: "2",
                 title: "Roguelike",
                 price: "200$",
-                pictureUrl: roguelike
+                pictureUrl: roguelike,
+                stock: 5
             }, {
                 id: "3",
                 title: "Infinite-Runner",
                 price: "100$",
-                pictureUrl: infiniteRunner
+                pictureUrl: infiniteRunner,
+                stock: 7
             }
         ];
 
