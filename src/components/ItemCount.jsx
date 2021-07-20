@@ -3,7 +3,7 @@ import {useState} from 'react'
 const ItemCount = ({initial, maxStock}) => {
     const [stock,
         setCount] = useState(initial);
-
+    
     const onAdd = () => {
         if (stock < maxStock) 
             setCount(p => p + 1)

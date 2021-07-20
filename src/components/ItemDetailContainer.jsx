@@ -1,14 +1,14 @@
-import ItemList from "./ItemList";
 import {useState, useEffect} from 'react';
 import tetris from '../img/tetris.png'
 import roguelike from '../img/roguelike.png'
 import infiniteRunner from '../img/infinite-runner.png'
+import ItemDetail from "./ItemDetail";
 
-export default function ItemListContainer() {
-    const [itemList,
-        setItemList] = useState([]);
+const ItemDetailContainer = () => {
+    const [itemDetails,
+        setItemDetails] = useState([]);
     useEffect(() => {
-        const list = [
+        const details = [
             {
                 id: "1",
                 title: "Tetris",
@@ -32,26 +32,25 @@ export default function ItemListContainer() {
                 stock: 7
             }
         ];
-
         const task = new Promise((res, rej) => {
             let status = 200;
             if (status === 200) {
                 setTimeout(() => {
-                    res(list);
+                    res(details);
                 }, 2000);
             } else {
                 rej("rechazado");
             }
         });
-
-        const getPromiseTask = () => {
+        const getItems = () => {
             return task
         };
 
-        getPromiseTask().then((r) => setItemList(r)).catch(err => {
+        getItems().then((d) => setItemDetails(d)).catch(err => {
             console.log('Error')
-        })
-
+        });
     }, []);
-    return <ItemList list={itemList}/>;
+    return (<ItemDetail details={itemDetails}/>)
 };
+
+export default ItemDetailContainer;
