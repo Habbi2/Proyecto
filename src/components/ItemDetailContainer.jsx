@@ -32,18 +32,18 @@ const ItemDetailContainer = () => {
                 stock: 7
             }
         ];
-        const task = new Promise((res, rej) => {
-            let status = 200;
-            if (status === 200) {
-                setTimeout(() => {
-                    res(details);
-                }, 2000);
-            } else {
-                rej("rechazado");
-            }
-        });
+        
         const getItems = () => {
-            return task
+            return new Promise((res, rej) => {
+                let status = 200;
+                if (status === 200) {
+                    setTimeout(() => {
+                        res(details);
+                    }, 2000);
+                } else {
+                    rej("rechazado");
+                }
+            });
         };
 
         getItems().then((d) => setItemDetails(d)).catch(err => {
