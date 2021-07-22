@@ -9,7 +9,7 @@ const NavBar = () => {
         <Navbar className="col-12" bg="dark" variant='dark' expand="lg">
             <div
                 id='col-3-n'
-                className='col-3'
+                className='col-4'
                 style={style}>
                 <NavbarBrand href="/">Habbi Games</NavbarBrand>
                 <NavbarBrand id='col-3-n' href="/">Store</NavbarBrand>
@@ -20,7 +20,7 @@ const NavBar = () => {
                     <NavLink as={Link} to="/infinite-runner/3">Infinite Runner</NavLink>
                 </NavDropdown>
             </div>
-            <div className='col-4' style={{display: 'flex', justifyContent: 'flex-end'}}>
+            <div className='col-6' style={{display: 'flex', justifyContent: 'flex-end'}}>
                 <CartWidget/>
             </div>
         </Navbar>
