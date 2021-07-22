@@ -1,24 +1,26 @@
-import {Navbar, NavbarBrand, NavDropdown, NavLink} from 'react-bootstrap';
+import { Navbar, NavbarBrand, NavDropdown, NavLink } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import CartWidget from './CartWidget';
 import '../components/scss/custom.scss';
-
+ 
 const NavBar = () => {
+    const style = {display: 'flex'}
     return (
-        <Navbar bg="dark" variant='dark' expand="lg">
+        <Navbar className="col-12" bg="dark" variant='dark' expand="lg">
             <div
-                className='mx-auto'
-                style={{
-                display: 'flex'
-            }}>
-                <NavbarBrand href="/">Habbi</NavbarBrand>
+                id='col-3-n'
+                className='col-3'
+                style={style}>
+                <NavbarBrand href="/">Habbi Games</NavbarBrand>
+                <NavbarBrand id='col-3-n' href="/">Store</NavbarBrand>
                 {/*Change scss from block dropdown to a full width dropdown*/}
-                <NavDropdown>
-                    <NavLink href="/tetris/1">Tetris</NavLink>
-                    <NavLink href="/roguelike/2">Roguelike</NavLink>
-                    <NavLink href="/infinite-runner/3">Infinite Runner</NavLink>
+                <NavDropdown id='col-3-n'>
+                    <NavLink as={Link} to="/tetris/1">Tetris</NavLink>
+                    <NavLink as={Link} to="/roguelike/2">Roguelike</NavLink>
+                    <NavLink as={Link} to="/infinite-runner/3">Infinite Runner</NavLink>
                 </NavDropdown>
             </div>
-            <div className='mx-auto'>
+            <div className='col-4' style={{display: 'flex', justifyContent: 'flex-end'}}>
                 <CartWidget/>
             </div>
         </Navbar>
