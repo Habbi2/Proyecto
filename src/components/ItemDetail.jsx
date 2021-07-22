@@ -7,7 +7,7 @@ const ItemDetail = ({details}) => {
                     {details.map(d => (
                         <li key={d.id} className="col-8">
                         <h1 className="list-word-d">{d.title}</h1>
-                        <p className="list-word-d">{d.text}</p>
+                        <p className="list-word-d" style={{width:'80%'}}>{d.text}</p>
                         </li>
                     ))}
                 {details.map(d => (
