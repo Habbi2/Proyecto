@@ -2,10 +2,17 @@ import ItemCount from "./ItemCount";
 
 const ItemDetail = ({details}) => {
     return (
-        <div className="container-fluid">
-            <ul className="row">
+        <div id="container-details" className="container-fluid">
+            <ul className="row-d">
+                    {details.map(d => (
+                        <li key={d.id} className="col-8">
+                        <h1 className="list-word-d">{d.title}</h1>
+                        <p className="list-word-d">{d.text}</p>
+                        </li>
+                    ))}
                 {details.map(d => (
-                    <li id="list-item" key={d.id} className="col-3">
+                    <li key={d.id} id="col-3-d" className="col-3">
+                    <div id="list-item-detail">
                         <div className="img-container">
                             <img alt="" src={d.pictureUrl} className="image"></img>
                         </div>
@@ -15,6 +22,7 @@ const ItemDetail = ({details}) => {
                             <h5 className="list-word">{d.description}</h5>
                         </div>
                         <ItemCount initial={1} maxStock={d.stock}/>
+                    </div>
                     </li>
                 ))}
             </ul>

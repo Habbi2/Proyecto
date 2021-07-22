@@ -8,7 +8,7 @@ function App() {
     return (
         <Router>
             <Switch>
-                <div>
+                <>
                     <NavBar/>
                     <Route exact path="/">
                         <ItemListContainer/>
@@ -22,7 +22,7 @@ function App() {
                     <Route exact path="/infinite-runner/:id">
                         <ItemDetailContainer id='3'/>
                     </Route>
-                </div>
+                </>
             </Switch>
         </Router>
     );

@@ -18,7 +18,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
 }
 
 .button {
@@ -94,7 +93,7 @@ body {
     margin-top: 7%;
 }
 
-.col-3{
+.col-3 {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -105,23 +104,59 @@ body {
     border-color: $color5;
 }
 
-.row{
+#col-3-d {
+    margin-left: 5%;
+}
+
+.img-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.col-8 {
+    list-style-type: none;
+    background-color: $color1;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: $color5;
+}
+
+.row {
     justify-content: space-evenly;
 }
 
-.list-word{
+.row-d {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.list-word {
     color: $color4;
     text-align: center;
 }
 
-.container-fluid{
+.list-word-d {
+    color: $color4;
+    margin-top: 4%;
+    margin-left: 5%;
+}
+
+.container-fluid {
     margin-top: 4%;
 }
 
-.word-container{
+.word-container {
     padding: 40px;
 }
 
 .infoButton {
     margin-bottom: 8%;
+}
+
+.container-fluid-d {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 4% 12.5%;
 }
