@@ -4,6 +4,7 @@ import CartWidget from './CartWidget';
 import '../components/scss/custom.scss';
  
 const NavBar = () => {
+    const categories = ["Adventure", "Puzzle"]
     const style = {display: 'flex'}
     return (
         <Navbar className="col-12" bg="dark" variant='dark' expand="lg">
@@ -15,9 +16,9 @@ const NavBar = () => {
                 <NavbarBrand id='col-3-n' href="/">Store</NavbarBrand>
                 {/*Change scss from block dropdown to a full width dropdown*/}
                 <NavDropdown style={{marginLeft:'7%'}}>
-                    <NavLink as={Link} to="/tetris/1">Tetris</NavLink>
-                    <NavLink as={Link} to="/roguelike/2">Roguelike</NavLink>
-                    <NavLink as={Link} to="/infinite-runner/3">Infinite Runner</NavLink>
+                    {categories.map(c => (
+                        <NavLink as={Link} to={`/category/${c}`}>{c}</NavLink>
+                    ))}
                 </NavDropdown>
             </div>
             <div className='col-6' style={{display: 'flex', justifyContent: 'flex-end'}}>

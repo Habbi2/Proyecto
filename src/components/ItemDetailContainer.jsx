@@ -43,7 +43,8 @@ const ItemDetailContainer = () => {
                 let status = 200;
                 if (status === 200) {
                     setTimeout(() => {
-                        res(details);
+                        res(details.filter(i => i.id === id));
+                        console.log(id)
                     }, 2000);
                 } else {
                     rej("Rechazado");
@@ -51,7 +52,7 @@ const ItemDetailContainer = () => {
             });
         };
 
-        getItems().then((d) => setItemDetails(d.filter(i => i.id === id))).catch(err => {
+        getItems().then((d) => setItemDetails(d)).catch(err => {
             console.log('Error')
         });
     }, [id]);

@@ -11,16 +11,13 @@ function App() {
                 <>
                     <NavBar/>
                     <Route exact path="/">
+                        <ItemListContainer filter="0"/>
+                    </Route>
+                    <Route exact path="/:item/:id">
+                        <ItemDetailContainer/>
+                    </Route>
+                    <Route path="/category/:id">
                         <ItemListContainer/>
-                    </Route>
-                    <Route exact path="/tetris/:id">
-                        <ItemDetailContainer id='1'/>
-                    </Route>
-                    <Route exact path="/roguelike/:id">
-                        <ItemDetailContainer id='2'/>
-                    </Route>
-                    <Route exact path="/infinite-runner/:id">
-                        <ItemDetailContainer id='3'/>
                     </Route>
                 </>
             </Switch>
