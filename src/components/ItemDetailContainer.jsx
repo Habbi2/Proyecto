@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react';
+import { useParams } from 'react-router';
 import tetris from '../img/tetris.png'
 import roguelike from '../img/roguelike.png'
 import infiniteRunner from '../img/infinite-runner.png'
@@ -7,6 +8,7 @@ import ItemDetail from "./ItemDetail";
 const ItemDetailContainer = () => {
     const [itemDetails,
         setItemDetails] = useState([]);
+    const { id } = useParams();
     useEffect(() => {
         const details = [
             {
@@ -32,7 +34,7 @@ const ItemDetailContainer = () => {
                 stock: 7
             }
         ];
-        
+
         const getItems = () => {
             return new Promise((res, rej) => {
                 let status = 200;
@@ -41,15 +43,15 @@ const ItemDetailContainer = () => {
                         res(details);
                     }, 2000);
                 } else {
-                    rej("rechazado");
+                    rej("Rechazado");
                 }
             });
         };
 
-        getItems().then((d) => setItemDetails(d)).catch(err => {
+        getItems().then((d) => setItemDetails(d.filter(i => i.id === id))).catch(err => {
             console.log('Error')
         });
-    }, []);
+    }, [id]);
     return (<ItemDetail details={itemDetails}/>)
 };
 

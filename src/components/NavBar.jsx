@@ -13,9 +13,9 @@ const NavBar = () => {
                 <NavbarBrand href="/">Habbi</NavbarBrand>
                 {/*Change scss from block dropdown to a full width dropdown*/}
                 <NavDropdown>
-                    <NavLink href="/tetris">Tetris</NavLink>
-                    <NavLink href="/roguelike">Roguelike</NavLink>
-                    <NavLink href="/infinite-runner">Infinite Runner</NavLink>
+                    <NavLink href="/tetris/1">Tetris</NavLink>
+                    <NavLink href="/roguelike/2">Roguelike</NavLink>
+                    <NavLink href="/infinite-runner/3">Infinite Runner</NavLink>
                 </NavDropdown>
             </div>
             <div className='mx-auto'>

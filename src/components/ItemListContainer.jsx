@@ -40,7 +40,7 @@ export default function ItemListContainer() {
                     res(list);
                 }, 2000);
             } else {
-                rej("rechazado");
+                rej("Rechazado");
             }
         });
 

@@ -1,4 +1,4 @@
-import ItemCount from "./ItemCount";
+import { Link } from "react-router-dom";
 
 const Item = ({item}) => {
     return (
@@ -10,7 +10,13 @@ const Item = ({item}) => {
                 <h1 className="list-word">{item.title}</h1>
                 <h4 className="list-word">{item.price}</h4>
             </div>
-            <ItemCount initial={1} maxStock={item.stock}/>
+            <div className="infoButton">
+                <label className="add">
+                    <Link to={`${item.title}/${item.id}`}>
+                    <button className="sbutton-add">Info</button>
+                    </Link>
+                </label>
+            </div>
         </li>
     );
 }
