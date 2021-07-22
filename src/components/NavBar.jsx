@@ -14,7 +14,7 @@ const NavBar = () => {
                 <NavbarBrand href="/">Habbi Games</NavbarBrand>
                 <NavbarBrand id='col-3-n' href="/">Store</NavbarBrand>
                 {/*Change scss from block dropdown to a full width dropdown*/}
-                <NavDropdown id='col-3-n'>
+                <NavDropdown style={{marginLeft:'7%'}}>
                     <NavLink as={Link} to="/tetris/1">Tetris</NavLink>
                     <NavLink as={Link} to="/roguelike/2">Roguelike</NavLink>
                     <NavLink as={Link} to="/infinite-runner/3">Infinite Runner</NavLink>
