@@ -10,7 +10,7 @@ This proyect counts with:
 
 An illutrated GIF showing functionality:
 
-![Alt Text](https://media4.giphy.com/media/Zc0TN5bZR78Q6KyXeo/giphy.gif?cid=790b76117cc49f56039d46585cbccc5a8e8ea4ff58a7f9a7&rid=giphy.gif&ct=g)
+![Alt Text](https://media.giphy.com/media/2gmNEqcSdByJJ3MHJt/giphy.gif)
 
 # Getting Started with Create React App
 
