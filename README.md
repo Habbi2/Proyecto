@@ -1,7 +1,7 @@
 # Habbi-Games
 An example of an E-commerce React App with a code integrated data base using an imput lag simulation of 2 seconds!
 
-![ezgif.com-gif-maker (1)](D:\Descargas\ezgif.com-gif-maker (1).gif)
+!https://media4.giphy.com/media/Zc0TN5bZR78Q6KyXeo/giphy.gif?cid=790b76117cc49f56039d46585cbccc5a8e8ea4ff58a7f9a7&rid=giphy.gif&ct=g
 
 # Getting Started with Create React App
 
