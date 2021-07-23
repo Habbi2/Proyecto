@@ -3,10 +3,13 @@ An example of an E-commerce React App with a code integrated data base using an 
 
 This proyect counts with:
 
-*Category Filter: Taking into account the data base categories you can filter your products.
-*Cart: An integrated cart into the Navigation Bar
-*Store: A store of product in which you can filter by item
-*Detail Sort: You can sort your items by Title or id showing a description and a purchase option
+-Category Filter: Taking into account the data base categories you can filter your products.
+
+-Cart: An integrated cart into the Navigation Bar
+
+-Store: A store of product in which you can filter by item
+
+-Detail Sort: You can sort your items by Title or id showing a description and a purchase option
 
 An illutrated GIF showing functionality:
 
