@@ -43,7 +43,7 @@ export default function ItemListContainer({filter}) {
             if (status === 200) {
                 setTimeout(() => {
                     console.log(id);
-                    if (filter === "0") 
+                    if (id === undefined) 
                         res(list);
                     else 
                         res(list.filter(i => i.category === id));

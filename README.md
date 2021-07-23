@@ -1,3 +1,8 @@
+# Habbi-Games
+An example of an E-commerce React App with a code integrated data base using an imput lag simulation of 2 seconds!
+
+![ezgif.com-gif-maker (1)](D:\Descargas\ezgif.com-gif-maker (1).gif)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -11,7 +11,7 @@ function App() {
                 <>
                     <NavBar/>
                     <Route exact path="/">
-                        <ItemListContainer filter="0"/>
+                        <ItemListContainer/>
                     </Route>
                     <Route exact path="/:item/:id">
                         <ItemDetailContainer/>
