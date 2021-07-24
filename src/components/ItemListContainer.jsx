@@ -5,7 +5,7 @@ import roguelike from "../img/roguelike.png";
 import infiniteRunner from "../img/infinite-runner.png";
 import { useParams } from "react-router";
 
-export default function ItemListContainer({ filter }) {
+export default function ItemListContainer() {
   const { id } = useParams();
   const [itemList, setItemList] = useState([]);
   useEffect(() => {
@@ -59,7 +59,7 @@ export default function ItemListContainer({ filter }) {
       .catch((err) => {
         console.log("Error");
       });
-  }, [filter, id]);
+  }, [id]);
   console.log(itemList);
   return <ItemList list={itemList} />;
 }
