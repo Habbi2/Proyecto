@@ -39,24 +39,22 @@ export default function ItemListContainer({ filter }) {
       },
     ];
 
-    const task = new Promise((res, rej) => {
-      let status = 200;
-      if (status === 200) {
-        setTimeout(() => {
-          console.log(id);
-          if (id === undefined) res(list);
-          else res(list.filter((i) => i.category === id));
-        }, 2000);
-      } else {
-        rej("Rechazado");
-      }
-    });
-
-    const getPromiseTask = () => {
-      return task;
+    const getPromise = () => {
+      new Promise((res, rej) => {
+        let status = 200;
+        if (status === 200) {
+          setTimeout(() => {
+            console.log(id);
+            if (id === undefined) res(list);
+            else res(list.filter((i) => i.category === id));
+          }, 2000);
+        } else {
+          rej("Rechazado");
+        }
+      });
     };
 
-    getPromiseTask()
+    getPromise()
       .then((r) => setItemList(r))
       .catch((err) => {
         console.log("Error");
