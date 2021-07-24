@@ -40,7 +40,7 @@ export default function ItemListContainer({ filter }) {
     ];
 
     const getPromise = () => {
-      new Promise((res, rej) => {
+      return new Promise((res, rej) => {
         let status = 200;
         if (status === 200) {
           setTimeout(() => {
@@ -52,7 +52,7 @@ export default function ItemListContainer({ filter }) {
           rej("Rechazado");
         }
       });
-    };
+    }
 
     getPromise()
       .then((r) => setItemList(r))
