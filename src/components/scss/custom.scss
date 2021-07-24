@@ -1,174 +1,174 @@
-@import 'bootstrap/scss/bootstrap.scss';
+@import "bootstrap/scss/bootstrap.scss";
 
-$color1: #142D40;
-$color2: #295A80;
-$color3: #3D87BF;
-$color4: #49A2E6;
-$color5: #52B4FF;
+$color1: #142d40;
+$color2: #295a80;
+$color3: #3d87bf;
+$color4: #49a2e6;
+$color5: #52b4ff;
 
 body {
-    background-color: $color2;
+  background-color: $color2;
 }
 
 .itemcount {
-    width: 100%;
-    height: auto;
-    padding-bottom: 30px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  height: auto;
+  padding-bottom: 30px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .button {
-    padding: 10px;
-    border: 3px solid;
-    margin: 10px;
-    min-width: 130px;
-    width: 80%;
-    display: inline-flex;
-    justify-content: space-between;
-    border-radius: 2rem;
-    border-color: $color4;
-    background-color: $color1;
-    padding: 8px;
-    text-align: center;
+  padding: 10px;
+  border: 3px solid;
+  margin: 10px;
+  min-width: 130px;
+  width: 80%;
+  display: inline-flex;
+  justify-content: space-between;
+  border-radius: 2rem;
+  border-color: $color4;
+  background-color: $color1;
+  padding: 8px;
+  text-align: center;
 }
 
 .sbutton {
-    background-color: transparent;
-    border-radius: 0;
-    border-color: transparent;
-    color: $color4;
-    font-size: 20px;
+  background-color: transparent;
+  border-radius: 0;
+  border-color: transparent;
+  color: $color4;
+  font-size: 20px;
 }
 
 .sbutton-add {
-    background-color: transparent;
-    border-radius: 0;
-    border-color: transparent;
-    color: $color4;
-    font-size: 22px;
+  background-color: transparent;
+  border-radius: 0;
+  border-color: transparent;
+  color: $color4;
+  font-size: 22px;
 }
 
 .add {
-    padding: 10px;
-    border: 3px solid;
-    min-width: 130px;
-    width: 80%;
-    border-radius: 2rem;
-    border-color: $color4;
-    background-color: $color1;
-    padding: 8px;
-    text-align: center;
+  padding: 10px;
+  border: 3px solid;
+  min-width: 130px;
+  width: 80%;
+  border-radius: 2rem;
+  border-color: $color4;
+  background-color: $color1;
+  padding: 8px;
+  text-align: center;
 }
 
 .dropdown-menu {
-    background-color: $color1;
-    border: 1px solid $color5;
+  background-color: $color1;
+  border: 1px solid $color5;
 }
 
 .navbar-dark .navbar-brand {
-    color: $color4;
+  color: $color4;
 }
 
 .nav-link {
-    color: $color4;
-};
+  color: $color4;
+}
 
 .bg-dark {
-    background-color: $color1 !important;
+  background-color: $color1 !important;
 }
 
 .stock {
-    color: $color4;
-    font-size: 25px;
-    line-height: 1.3;
-    margin-bottom: 0;
+  color: $color4;
+  font-size: 25px;
+  line-height: 1.3;
+  margin-bottom: 0;
 }
 
 .image {
-    width: auto;
-    height: 200px;
-    margin-top: 7%;
+  width: auto;
+  height: 200px;
+  margin-top: 7%;
 }
 
 #col-3-n {
-    margin-left: 10%;
+  margin-left: 10%;
 }
 
 #col-3-l {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-color: $color1;
-    border: 2px solid;
-    border-radius: 10px;
-    border-color: $color5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: $color1;
+  border: 2px solid;
+  border-radius: 10px;
+  border-color: $color5;
 }
 
 #col-3-d {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-color: $color1;
-    border: 2px solid;
-    border-radius: 10px;
-    border-color: $color5;
-    margin-left: 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: $color1;
+  border: 2px solid;
+  border-radius: 10px;
+  border-color: $color5;
+  margin-left: 5%;
 }
 
 .img-container {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .col-8 {
-    list-style-type: none;
-    background-color: $color1;
-    border: 2px solid;
-    border-radius: 10px;
-    border-color: $color5;
+  list-style-type: none;
+  background-color: $color1;
+  border: 2px solid;
+  border-radius: 10px;
+  border-color: $color5;
 }
 
 .row {
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .row-d {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .list-word {
-    color: $color4;
-    text-align: center;
+  color: $color4;
+  text-align: center;
 }
 
 .list-word-d {
-    color: $color4;
-    margin-top: 4%;
-    margin-left: 5%;
+  color: $color4;
+  margin-top: 4%;
+  margin-left: 5%;
 }
 
 .container-fluid {
-    margin-top: 4%;
+  margin-top: 4%;
 }
 
 .word-container {
-    padding: 40px;
+  padding: 40px;
 }
 
 .infoButton {
-    margin-bottom: 8%;
+  margin-bottom: 8%;
 }
 
 .container-fluid-d {
-    display: flex;
-    width: 100%;
-    height: auto;
-    margin: 4% 12.5%;
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: 4% 12.5%;
 }
