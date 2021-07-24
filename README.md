@@ -1,7 +1,19 @@
 # Habbi-Games
 An example of an E-commerce React App with a code integrated data base using an imput lag simulation of 2 seconds!
 
-![ezgif.com-gif-maker (1)](D:\Descargas\ezgif.com-gif-maker (1).gif)
+This proyect counts with:
+
+*Category Filter: Taking into account the data base categories you can filter your products.
+
+*Cart: An integrated cart into the Navigation Bar
+
+*Store: A store of product in which you can filter by item
+
+*Detail Sort: You can sort your items by Title or id showing a description and a purchase option
+
+An illutrated GIF showing functionality:
+
+![Alt Text](https://media.giphy.com/media/2gmNEqcSdByJJ3MHJt/giphy.gif)
 
 # Getting Started with Create React App
 
