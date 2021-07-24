@@ -3,7 +3,7 @@ import { useParams } from "react-router";
 import tetris from "../img/tetris.png";
 import roguelike from "../img/roguelike.png";
 import infiniteRunner from "../img/infinite-runner.png";
-import ItemDetail from "./ItemDetail";
+import ItemDetail from "./ItemDetail"
 
 const ItemDetailContainer = () => {
   const [itemDetails, setItemDetails] = useState([]);
@@ -68,7 +68,7 @@ const ItemDetailContainer = () => {
         console.log("Error");
       });
   }, [id]);
-  return <ItemDetail details={itemDetails} />;
+  return <ItemDetail details={itemDetails}></ItemDetail>;
 };
 
 export default ItemDetailContainer;
