@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const ItemCount = ({ initial, maxStock }) => {
   const [stock, setCount] = useState(initial);
   const [option, setOption] = useState(0);
+  const [amountAdded, setAmountAdded] = useState(0);
   const options = [
     { value: 0, text: "Add to Cart", symbol1: "+", symbol2: "-" },
     { value: 1, text: "Finish Purchase", symbol1: "", symbol2: "" },
@@ -18,7 +19,7 @@ const ItemCount = ({ initial, maxStock }) => {
   };
 
   const onConfirm = () => {
-    setOption(1);
+    option === 0 ? setOption(1) : setAmountAdded(stock);
   };
 
   const onReject = () => {
