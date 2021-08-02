@@ -1,6 +1,12 @@
 import ItemCount from "./ItemCount";
+import { useState } from "react";
 
 const ItemDetail = ({ details }) => {
+  const [count, setCount] = useState(0);
+  const onAdd = (stockSelected) => {
+    setCount(stockSelected);
+  }
+
   return (
     <div id="container-details" className="container-fluid">
       <ul className="row-d">
@@ -23,7 +29,7 @@ const ItemDetail = ({ details }) => {
                 <h4 className="list-word">{d.price}</h4>
                 <h5 className="list-word">{d.description}</h5>
               </div>
-              <ItemCount initial={1} maxStock={d.stock} />
+              <ItemCount initial={1} maxStock={d.stock} onAdd={onAdd} />
             </div>
           </li>
         ))}

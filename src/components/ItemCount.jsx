@@ -1,16 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const ItemCount = ({ initial, maxStock }) => {
+const ItemCount = ({ initial, maxStock, onAdd }) => {
   const [stock, setCount] = useState(initial);
   const [option, setOption] = useState(0);
-  const [amountAdded, setAmountAdded] = useState(0);
   const options = [
     { value: 0, text: "Add to Cart", symbol1: "+", symbol2: "-" },
     { value: 1, text: "Finish Purchase", symbol1: "", symbol2: "" },
   ];
 
-  const onAdd = () => {
+  const onIncrease = () => {
     if (stock < maxStock) setCount((p) => p + 1);
   };
 
@@ -19,7 +18,7 @@ const ItemCount = ({ initial, maxStock }) => {
   };
 
   const onConfirm = () => {
-    option === 0 ? setOption(1) : setAmountAdded(stock);
+    option === 0 ? setOption(1) : onAdd();
   };
 
   const onReject = () => {
@@ -40,7 +39,7 @@ const ItemCount = ({ initial, maxStock }) => {
               Back
             </h5>
           )}
-          <button className="sbutton" onClick={onAdd}>
+          <button className="sbutton" onClick={onIncrease}>
             {options[option].symbol1}
           </button>
         </label>
