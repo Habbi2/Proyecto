@@ -15,6 +15,9 @@ An illutrated GIF showing functionality:
 
 ![Alt Text](https://media.giphy.com/media/2gmNEqcSdByJJ3MHJt/giphy.gif)
 
+You can test the App here:
+https://wonderful-feynman-43e519.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
